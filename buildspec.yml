@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
-    M2_HOME: "/usr/share/maven2"
+    M2_HOME: "/usr/bin/mvn"
 
 phases:
   install:
@@ -14,6 +14,7 @@ phases:
     commands:
       - echo Nothing to do in the pre_build phase, just listing which mvn...
       - which mvn
+      - mvn -version
   build:
     commands:
       - echo Build started on `date`
