@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
-    M2_HOME: "/usr/share/maven"
+    M2_HOME: "/usr/share/maven2"
 
 phases:
   install:
