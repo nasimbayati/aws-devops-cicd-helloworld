@@ -24,7 +24,7 @@
 			<label class="" for="Login">Login &nbsp;&nbsp;</label> <input type="text" name="uid" class="form-control">
 			<br/>Type in your first name<br/>
 			<label class="" for="Password">Password &nbsp;&nbsp;</label> <input type="password" name="pwd" class="form-control">
-			<br/>Password is hard coded as admin123
+			<br/>The password is hard coded as admin123
 		</div>
 		<br><br>
 		<a href="#" id="run_button" class="btn btn-success" onclick="skl_form.submit();">Go ahead, try it!</a>
