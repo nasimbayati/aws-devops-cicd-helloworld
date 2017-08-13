@@ -12,7 +12,8 @@ phases:
       - apt-get install -y maven
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase...
+      - echo Nothing to do in the pre_build phase, just listing which mvn...
+      - which mvn
   build:
     commands:
       - echo Build started on `date`
