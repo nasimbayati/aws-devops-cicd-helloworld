@@ -1,15 +1,9 @@
 version: 0.2
 
-env:
-  variables:
-    JAVA_HOME: "/usr/lib/jvm/java-8-openjdk-amd64"
-    M2_HOME: "/usr/bin/mvn"
-
 phases:
   install:
     commands:
-      - apt-get update -y
-      - apt-get install -y maven
+      - echo Nothing to install, image should have it all
   pre_build:
     commands:
       - echo Nothing to do in the pre_build phase, just listing which mvn...
@@ -25,4 +19,4 @@ phases:
 artifacts:
   files:
     - target/HelloWorld-1.war
-  discard-paths: yes
+
