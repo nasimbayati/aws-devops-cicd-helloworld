@@ -18,7 +18,7 @@ phases:
       - mvn package
       - echo The PWD is as follows
       - pwd
-      - ll
+      - ls -al
 artifacts:
   files:
     - target/HelloWorld-1.war
