@@ -12,13 +12,17 @@ phases:
   build:
     commands:
       - echo Build started on `date`
+      - mvn package
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn package
-      - echo The PWD is as follows
+      - echo Working on creating the tar ball with the WAR and AppSpec file for CodeDeploy
       - pwd
-      - ls -al
+      - mkdir dep
+      - cp target/HelloWorld-1.war ./dep
+      - cp ./appspec.yml ./dep
+      - cd ./dep
+      - ls -al ./dep
 artifacts:
   files:
     - target/HelloWorld-1.war
