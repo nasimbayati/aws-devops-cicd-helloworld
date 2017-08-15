@@ -16,6 +16,9 @@ phases:
     commands:
       - echo Build completed on `date`
       - mvn package
+      - echo The PWD is as follows
+      - pwd
+      - ll
 artifacts:
   files:
     - target/HelloWorld-1.war
