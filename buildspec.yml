@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Nothing to install, container image should have it all (based on what we selected)
+      - echo Nothing to install, container image should have it all based on what we selected
   pre_build:
     commands:
       - echo Just listing basic information about the environment
