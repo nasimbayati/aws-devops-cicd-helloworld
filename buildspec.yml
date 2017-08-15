@@ -3,12 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Nothing to install, image should have it all
+      - echo Nothing to install, container image should have it all (based on what we selected)
   pre_build:
     commands:
-      - echo Nothing to do in the pre_build phase, just listing which mvn...
+      - echo Just listing basic information about the environment
       - which mvn
       - mvn -version
+      - pwd
   build:
     commands:
       - echo Build started on `date`
@@ -17,14 +18,13 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Working on creating the tar ball with the WAR and AppSpec file for CodeDeploy
-      - pwd
       - mkdir dep
-      - cp target/HelloWorld-1.war ./dep
-      - cp ./appspec.yml ./dep
-      - cd ./dep
-      - ls -al ./dep
+      - cd dep
+      - cp ../target/HelloWorld-1.war .
+      - cp ../appspec.yml .
+      - ls -al
+      - tar -zcvf ../target/HelloWorld.tar.gz *.*
 artifacts:
   files:
-    - target/HelloWorld-1.war
+    - target/HelloWorld.tar.gz
   discard-paths: yes
-
