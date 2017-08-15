@@ -18,6 +18,6 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/HelloWorld-1.war
+    - HelloWorld-1.war
   discard-paths: yes
 
