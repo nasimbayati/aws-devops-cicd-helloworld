@@ -26,5 +26,7 @@ phases:
       - tar -zcvf ../target/HelloWorld.tar.gz *.*
 artifacts:
   files:
-    - target/HelloWorld.tar.gz
+#    - target/HelloWorld.tar.gz
+    - dep/appspec.yml
+    - dep/HelloWorld-1.war
   discard-paths: yes
