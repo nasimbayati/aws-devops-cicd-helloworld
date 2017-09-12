@@ -21,7 +21,8 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
 	
-	private static final Logger logger = Logger.getLogger(Application.class.getName());
+	//Will also be used from the JSP
+	public static final Logger logger = Logger.getLogger(Application.class.getName());
 	
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
