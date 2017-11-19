@@ -1,3 +1,5 @@
+<%@ page import="app.Application" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,6 +19,7 @@
 </head>
 
 <body>
+	<% Application.logger.info("Request received by home.jsp"); %>
 	<h1>Awesome <%= request.getSession(false).getAttribute("uid") %>!</h1>
 	If you are reading this message then this application has successfully routed through multiple JSPs and created a session.
 	<br/>

@@ -1,3 +1,5 @@
+<%@ page import="app.Application" %>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -17,6 +19,7 @@
 </head>
 
 <body>
+	<% Application.logger.info("Request received by index.jsp"); %>
 	<h1>Welcome!</h1>
 	If you are reading this message then the installation has gone well and the application is running. Congratulations!!
 	<form name="skl_form" class="form-inline" role="form" method="post" action="login_controller.jsp">
