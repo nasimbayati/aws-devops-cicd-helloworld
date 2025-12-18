@@ -1,1 +1,32 @@
-/target/
+# ===== OS junk =====
+.DS_Store
+._*
+Thumbs.db
+
+# ===== Java / Maven =====
+target/
+*.class
+*.log
+
+# ===== IDEs =====
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ===== Secrets / keys (never commit) =====
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.aws/
+
